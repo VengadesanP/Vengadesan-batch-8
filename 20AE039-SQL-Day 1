@@ -1,0 +1,16 @@
+create database db1;
+create table student(
+     s_id int primary key,
+     s_name varchar(30),
+     department text);
+describe student;
+alter table student add ph_no varchar(10);
+alter table student drop department;
+insert into student values
+(1,"aa","1234"),
+(2,"bb","2345"),
+(3,"cc","3456"),
+(4,"dd","4567"),
+(5,"ee","5678");
+insert into student(s_id,s_name)values(6,"ff");
+select* from student:
